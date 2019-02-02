@@ -18,6 +18,7 @@ header {
     font-weight: bold;
     text-align: center;
     padding: 20px;
+    display: center
      
   }
 header h1, header h2{
@@ -30,6 +31,17 @@ header h1, header h2{
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
     margin: 20px;
+  }
+  #weather {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: solid 3px #D5AC6C;
+    margin: 20px;
+  }
+  #motto{
+      font-style: italic
   }
  nav {
   background-color: #F2E6C4;
@@ -54,7 +66,9 @@ nav li {
   display: block;
 }
 
-
+.current {
+    background-color: #D5AC6C
+}
  
 
 
