@@ -7,13 +7,12 @@ body {
   }
     
   h1,h2,h3,h4,h5,h6 {
-    color: rgb(84,96,49);
+    color: #546031;
     font-family: 'Roboto', sans-serif;
     margin-bottom: -10px;
   }
 header {
-    background-color: rgb(84,96,49);
-   
+    background-color: #546031;
     font-size: 1.2em;
     line-height: 4;
     font-weight: bold;
@@ -25,14 +24,15 @@ header h1, header h2{
     color: #ffffff;
 }
   #logo {
+    float: left;
     display: inline-block;
     vertical-align: middle;
     background-color: #ffffff;
-    border: solid 3px rgb(213,172,108);
+    border: solid 3px #D5AC6C;
     margin: 20px;
   }
  nav {
-  background-color: rgb(242,230,196);
+  background-color: #F2E6C4;
   font-size: 1.2em;
   line-height: 4;
   font-weight: bold;
@@ -42,13 +42,13 @@ header h1, header h2{
  }
 nav a {
   display: block;  
-  color: rgb(84,96,49);
+  color: #546031;
   text-decoration: none;
   
 }
 nav a:hover {
   color: rgb(288,288,288);
-  background-color: rgb(146,177,118);
+  background-color: #92B176;
 }
 nav li {
   display: block;
