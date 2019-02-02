@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    max-width: 960px; 
+  }
+    
+  h1,h2,h3,h4,h5,h6 {
+    color: rgb(84,96,49);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -10px;
+  }
+header {
+    background-color: rgb(84,96,49);
+   
+    font-size: 1.2em;
+    line-height: 4;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+     
+  }
+header h1, header h2{
+    color: #ffffff;
+}
+  #logo {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #ffffff;
+    border: solid 3px rgb(213,172,108);
+    margin: 20px;
+  }
+ nav {
+  background-color: rgb(242,230,196);
+  font-size: 1.2em;
+  line-height: 4;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px;
+  
+ }
+nav a {
+  display: block;  
+  color: rgb(84,96,49);
+  text-decoration: none;
+  
+}
+nav a:hover {
+  color: rgb(288,288,288);
+  background-color: rgb(146,177,118);
+}
+nav li {
+  display: block;
+}
+
+
+ 
+
+
+  
