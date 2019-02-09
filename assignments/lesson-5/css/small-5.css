@@ -31,7 +31,6 @@ header h1, header h2{
   #logo {
     position: relative;
     float: left;
-    display: inline-block;
     vertical-align: middle;
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
@@ -40,7 +39,6 @@ header h1, header h2{
   }
   #weather {
     float: right;
-    display: inline-block;
     vertical-align: middle;
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
@@ -71,7 +69,7 @@ nav a {
 }
 nav a:hover {
   color: rgb(288,288,288);
-  background-color: #92B176;
+  background-color: #546031;
 }
 nav li {
   display: none;
@@ -80,7 +78,27 @@ nav li {
 .current {
     text-decoration: underline  
 }
- 
 
+main {
+  max-width: 60%; margin: 0 auto;
+}
 
+.hero {
+  margin: 10px auto; position: relative;
+}
+
+.summary {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	background: radial-gradient(#eee, #F2E6C4);
+  color: #546031;
+  border: 1px solid #D5AC6C;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #fff;
+}
+.summary h3 {
+  text-decoration: underline;
+  margin-bottom: 10px;
+} 
   
