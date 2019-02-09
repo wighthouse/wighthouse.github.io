@@ -46,7 +46,8 @@ header h1, header h2{
     margin: 20px;
   }
   #motto{
-      font-style: italic
+      font-style: italic;
+      color: #ffffff
   }
  nav {
   background-color: #F2E6C4;
@@ -54,6 +55,7 @@ header h1, header h2{
   line-height: 4;
   font-weight: bold;
   text-align: center;
+  margin-top: -10px;
   padding: 0px;
   
  }
@@ -99,6 +101,14 @@ main {
 }
 .summary h3 {
   text-decoration: underline;
+  margin-top: 0px;
   margin-bottom: 10px;
 } 
+#label{
+  text-align: right;
+}
+#value {
+  margin-left: 5px;
+  color: #D5AC6C;
+}
   
