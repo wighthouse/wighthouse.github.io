@@ -1,7 +1,11 @@
 @media only screen and (min-width: 64em) {
 
+nav li:first-child { 
+    display: none;
+}
 
-.li {
-    display: inline block;
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
 }    
 }

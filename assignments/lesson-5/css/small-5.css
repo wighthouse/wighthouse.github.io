@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
-
+* {
+  padding: 0;
+}
 body {
     font-family: 'Open Sans', sans-serif;
     max-width: 960px; 
+     
   }
     
   h1,h2,h3,h4,h5,h6 {
@@ -13,23 +16,26 @@ body {
   }
 header {
     background-color: #546031;
+    margin: 10px auto;
     font-size: 1.2em;
-    line-height: 4;
-    font-weight: bold;
+    border: 1px solid  #D5AC6C;
+    box-shadow: 0 0 30px #888; 
     text-align: center;
     padding: 20px;
-    display: center
+    
      
   }
 header h1, header h2{
     color: #ffffff;
 }
   #logo {
+    position: relative;
     float: left;
     display: inline-block;
     vertical-align: middle;
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
+    box-shadow: 0 0 20px #666;
     margin: 20px;
   }
   #weather {
@@ -38,6 +44,7 @@ header h1, header h2{
     vertical-align: middle;
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
+    box-shadow: 0 0 20px #888;
     margin: 20px;
   }
   #motto{
@@ -52,6 +59,10 @@ header h1, header h2{
   padding: 0px;
   
  }
+nav li:first-child { 
+  display: block;
+}
+
 nav a {
   display: block;  
   color: #546031;
@@ -63,11 +74,11 @@ nav a:hover {
   background-color: #92B176;
 }
 nav li {
-  display: block;
+  display: none;
 }
 
 .current {
-    background-color: #D5AC6C
+    text-decoration: underline  
 }
  
 
