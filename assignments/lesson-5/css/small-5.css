@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai');
 * {
   padding: 0;
+ 
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    max-width: 960px; 
+    max-width: 960px;
+    margin: auto; 
      
   }
     
@@ -22,9 +24,8 @@ header {
     box-shadow: 0 0 30px #888; 
     text-align: center;
     padding: 20px;
-    
+}    
      
-  }
 header h1, header h2{
     color: #ffffff;
 }
@@ -55,7 +56,7 @@ header h1, header h2{
   line-height: 4;
   font-weight: bold;
   text-align: center;
-  margin-top: -10px;
+  margin-top: -20px;
   padding: 0px;
   
  }
@@ -82,11 +83,18 @@ nav li {
 }
 
 main {
-  max-width: 60%; margin: 0 auto;
+  max-width: 100%; margin: 0 auto;
 }
-
+.town-name {
+  text-align: center;
+  text-shadow: 0 0 20px #888;
+  padding: 10px;
+  margin: 10px 10px auto;
+}
 .hero {
-  margin: 10px auto; position: relative;
+  display: inline-block;
+  margin: 1rem auto; position: relative;
+  max-width: 80%;
 }
 
 .summary {
@@ -111,4 +119,66 @@ main {
   margin-left: 5px;
   color: #D5AC6C;
 }
+.fiveday {
+  display: none;
+  text-shadow: 0 0 20px #888;
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
   
+}  
+.fiveday th, td {
+  border: 2px solid #546031;
+
+}
+.article {
+  display: inline-block;
+  background-color: #F2E6C4;
+  border: solid 2px #D5AC6C;
+  max-width: 100%;
+  padding: 1.5rem;
+  margin: 1rem auto; 
+}
+#academypic {
+  float: right;
+  vertical-align: bottom;
+  border: solid 2px #D5AC6C;
+  box-shadow: 0 0 20px #888;
+  margin: .5rem;
+}
+pre {
+  color: #D5AC6C;
+  font-style: italic;
+}
+footer {
+  display: block; 
+  background-color: #546031;
+  color: #ffffff;
+  margin: 10px auto;
+  font-size: .75rem;
+  border: 1px solid  #D5AC6C;
+  box-shadow: 0 0 30px #888; 
+  text-align: center;
+    
+}
+h5 {
+  color: #ffffff;
+  font-weight: lighter;  
+}
+#map {
+  float: right;
+  border: solid 2px #D5AC6C;
+  box-shadow: 0 0 30px #888;
+  margin-right: 2rem;
+}
+footer .contact {
+  text-align: left;
+  margin-left: 2rem;
+}
+footer .info {
+  background-color: #F2E6C4;
+  color: #546031;
+  font-size: .75rem;
+  text-align: center;
+  padding: 10px;
+}

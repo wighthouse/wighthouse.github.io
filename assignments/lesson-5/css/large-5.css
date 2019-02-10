@@ -7,5 +7,16 @@ nav li:first-child {
 nav ul li {
     display: inline-block;
     margin-right: 5px;
-}    
+}
+main {
+    max-width: 60%;
+  }
+.fiveday, table{
+    display: inline-block;
+    border-collapse: collapse;
+    
+}
+.article {
+    width: 100%;
+    }    
 }
