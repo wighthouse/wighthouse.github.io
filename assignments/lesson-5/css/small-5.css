@@ -10,7 +10,10 @@ body {
     margin: auto; 
      
   }
-    
+  main {
+    max-width: 100%;
+    height: auto;
+  }  
   h1,h2,h3,h4,h5,h6 {
     color: #546031;
     font-family: 'Roboto', sans-serif;
@@ -112,11 +115,12 @@ main {
   margin-top: 0px;
   margin-bottom: 10px;
 } 
-#label{
+.label{
   text-align: right;
 }
-#value {
+.value {
   margin-left: 5px;
+  text-align: left;
   color: #D5AC6C;
 }
 .fiveday {
