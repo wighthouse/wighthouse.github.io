@@ -1,0 +1,27 @@
+@media only screen and (min-width: 64em) {
+
+nav li:first-child { 
+    display: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding:0 10px 0 0;
+    margin-right: 5px;
+}
+
+main {
+    max-width: 60%;
+  }
+.fiveday, table{
+    display: inline-block;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}    
+
+.article {
+    width: 100%;
+    }    
+}
