@@ -8,7 +8,7 @@ margin: 0;
 body {
     font-family: 'Open Sans', sans-serif;
     max-width: 960px;
-    margin: auto; 
+    margin: auto;
      
   }
   main {
@@ -18,11 +18,11 @@ body {
   h1,h2,h3,h4,h5,h6 {
     color: #546031;
     font-family: 'Roboto', sans-serif;
-    margin-bottom: -10px;
+    
   }
 header {
     background-color: #546031;
-    margin: 10px auto;
+    margin: 10px auto 0px;
     font-size: 1.2em;
     border: 1px solid  #D5AC6C;
     box-shadow: 0 0 30px #888; 
@@ -56,11 +56,10 @@ header h1, header h2{
   }
  nav {
   background-color: #F2E6C4;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 4;
   font-weight: bold;
   text-align: center;
-  margin-top: -20px;
   padding: 0px;
   
  }
@@ -72,6 +71,7 @@ nav a {
   display: block;  
   color: #546031;
   text-decoration: none;
+  padding: 10px;
   
 }
 nav a:hover {
@@ -92,12 +92,11 @@ main {
 .town-name {
   text-align: center;
   text-shadow: 0 0 20px #888;
-  padding: 10px;
-  margin: 10px 10px auto;
+  padding: 40px 0px 20px;
 }
 .hero {
   display: inline-block;
-  margin: 1rem auto; position: relative;
+  position: relative;
   max-width: 100%;
 }
 
