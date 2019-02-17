@@ -63,22 +63,22 @@ header h1, header h2{
   padding: 0px;
   
  }
-nav li:first-child { 
+.navigation li:first-child { 
   display: block;
 }
 
-nav a {
+.navigation a {
   display: block;  
   color: #546031;
   text-decoration: none;
   padding: 10px;
   
 }
-nav a:hover {
+.navigation a:hover {
   color: rgb(288,288,288);
   background-color: #546031;
 }
-nav li {display: none;}
+.navigation li {display: none;}
 
 .responsive li {display: block;}
 
