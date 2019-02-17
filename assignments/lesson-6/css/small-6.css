@@ -102,9 +102,9 @@ main {
 	position: absolute;
 	top: 25px;
 	left: 50px;
-	background: radial-gradient(#eee, #F2E6C4);
+	background: radial-gradient(#eee, #D5AC6C);
   	color: #546031;
-	opacity:.5;
+	opacity:.85;
   	border: 1px solid #D5AC6C;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #fff;
@@ -120,7 +120,7 @@ main {
 .value {
   margin-left: 5px;
   text-align: left;
-  color: #D5AC6C;
+  color: #ffffff;
 }
 .fiveday {
   display: none;
