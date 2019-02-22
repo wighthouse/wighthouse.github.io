@@ -5,10 +5,14 @@
 }
 
 .navigation li {
-    display: inline-block;
+    display: block;
+    flex: 1 1 auto;
     
 }
-
+.navigation {
+    flex-direction: row;
+    
+}
 
 .fiveday, table{
     display: inline-block;
