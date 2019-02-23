@@ -1,4 +1,4 @@
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 480px) {
 
 .navigation li:first-child { 
     display: none;
@@ -14,7 +14,6 @@
     
 }
 
-
 .fiveday, table{
     display: inline-block;
     border-collapse: collapse;
@@ -25,14 +24,9 @@ td {
 
 .article {
     max-width: 100%;
-}    
+    }    
 
 .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.gallery img:hover {
-    box-shadow: 0 0 50px #333;
-   
-    }
-
+    grid-template-columns: 1fr 1fr ;
+  }
 }

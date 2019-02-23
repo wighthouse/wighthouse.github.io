@@ -41,25 +41,26 @@
         <main>
             <h2 class="page-name">Preston Idaho</h2>
             <div class="hero">
-                <img class="hero" src="images/cit230-image-franklin-large-960.jpg" sizes="100vw"
+                <img class="hero" src="images/idaho-hero-large-960.jpg" sizes="100vw"
                 alt="Idaho landscape"
-                srcset="images/cit230_image_franklin-small-480.jpg 480w, 
-                        images/cit230-image-franklin-large-960.jpg 960w">
+                srcset="images/idaho-hero-small-240.jpg 240w, 
+                        images/idaho-hero-medium-480.jpg 480w, 
+                        images/idaho-hero-large-960.jpg 960w">
                 <section class="summary">
                     <h3>Today's Weather</h3>
                     <div class="currentdetails">
                         <div class="label">Currently: </div>
                         <div class="value"><span class="currently">Cloudy</span></div>
                         <div class="label">High: </div>
-                        <div class="value"><span class="high">27 &deg;F</span></div>
+                        <div class="value"><span id="high">27</span> &deg;F</div>
                         <div class="label">Low: </div>
                         <div class="value"><span class="low">15 &deg;F</span></div>
                         <div class="label">Wind Chill: </div>
-                        <div class="value"><span class="chill">10 &deg;F</span></div>
+                        <div class="value"><span id="chill"></span> &deg;F</div>
                         <div class="label">Humidity: </div>
-                        <div class="value"><span class="humidity">77%</span></div>
+                        <div class="value"><span class="humidity">77 %</span></div>
                         <div class="label">Wind Speed: </div>
-                        <div class="value"><span class="speed">3 &deg;F</span></div>
+                        <div class="value"><span id="speed">3</span> mph</div>
                     </div>
                 </section>
             </div>
@@ -137,6 +138,7 @@
                 </div>
             </div>
         </footer>
+        <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/toggle-menu.js"></script>
     </body>
