@@ -208,4 +208,5 @@ figcaption {
   font-style: italic;
   font-size: smaller;
   text-align: center;
+  padding: .5rem;
 }
