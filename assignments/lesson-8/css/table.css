@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-
-
 table { 
     width: 300px;
     border-collapse: collapse;
     text-align: center;
-    font-family: 'Ubuntu', sans-serif ;
+    font-family: Ubuntu, sans-serif ;
     color: black ;
     margin: 20px;
     box-shadow: 10px 10px 15px  #628ca6;
@@ -18,14 +16,11 @@ table, th, td {
 thead:first-child {
     font-size: 1.5rem;
     background-color: #7fb9c2;
-    
-
 }
 tbody th {
     background-color: #628ca6;
     color: white;
     letter-spacing: .05rem;
-
 }
 tbody tr:nth-of-type(2n+1) {
     background-color: #e7f0ed;
@@ -41,8 +36,6 @@ tbody tr:nth-child(6) td:nth-child(1) {
     font-style: italic;
 
 }
-
-
 tfoot {
     background-color: #7fb9c2;
     font-size: smaller;
