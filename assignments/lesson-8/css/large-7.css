@@ -8,6 +8,7 @@
     display: block;
     flex: 1 1 auto;
     
+    
 }
 
 .fiveday, table{
@@ -28,6 +29,10 @@ td {
 .galleryimage:hover {
     box-shadow: 0 0 50px #333;
    
-    }
+}
+label.side {
+    padding: .25rem;
+    font-size: .75rem;
+  }
 
 }

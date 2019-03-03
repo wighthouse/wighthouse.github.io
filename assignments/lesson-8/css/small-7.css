@@ -90,7 +90,6 @@ main {
 }
 .page-name {
   text-align: center;
-  text-shadow: 0 0 20px #888;
   padding: 40px 0px 20px;
 }
 .hero {
@@ -209,4 +208,74 @@ figcaption {
   font-size: smaller;
   text-align: center;
   padding: .5rem;
+}
+/* Storm Center CSS */
+#stormSub {
+  text-align: center;
+  text-emphasis: #546031;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+.formContainer {
+  display: flex;
+  margin: 0 auto 20px;
+  flex-direction: column;
+  max-width: 25rem;
+  justify-content: center;
+  background-color: #F2E6C4;
+  color: #546031;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px 5px  #bbb;
+
+}
+fieldset {
+  border: none;
+  margin: 1rem 2rem 1rem;
+  padding: .5rem ;
+
+}
+legend {
+  font-size: 1.25rem;
+  text-align: left;
+  
+  
+}
+label.above, .formdiv {
+  display: block;
+  padding-top: 1rem;
+  font-size: .8rem;
+}
+label.above input, label.above select {
+  display: block;
+  margin-top: .25rem;
+  padding: .75rem;
+  font-size: 1rem;
+  border: 1px solid #888;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0,0,0,0.1);
+}
+label.side {
+  display: block;
+  padding: .5rem;
+  font-size: 1rem;
+}
+.formContainer .button {
+  border: none;
+  background-color: #546031;
+  color: white;
+  border-radius: 1rem;
+  padding: .5rem 1.25rem;
+  margin:0 0 2rem 2rem;
+  width: 98%;
+  max-width: 20rem;
+}
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
 }
