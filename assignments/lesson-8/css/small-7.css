@@ -248,7 +248,7 @@ label.above, .formdiv {
   padding-top: 1rem;
   font-size: .8rem;
 }
-label.above input, label.above select {
+label.above input, label.above select, textarea {
   display: block;
   margin-top: .25rem;
   padding: .75rem;
