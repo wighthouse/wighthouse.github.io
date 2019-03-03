@@ -12,7 +12,7 @@ body {
      
   }
   main {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
   }  
   h1,h2,h3,h4,h5,h6 {
@@ -87,6 +87,7 @@ header h1, header h2{
 
 main {
   max-width: 100%; margin: 0 auto;
+  
 }
 .page-name {
   text-align: center;
@@ -160,7 +161,8 @@ pre {
   font-style: italic;
 }
 footer {
-  display: block; 
+  display: block;
+  max-width: 80%; 
   background-color: #546031;
   color: #ffffff;
   margin: 10px auto;
@@ -278,4 +280,18 @@ input:invalid {
 
 input:focus:invalid {
   box-shadow: none;
+}
+.thankyou {
+  display: flex;
+  margin: 3rem auto 3rem auto; 
+  flex-direction: column;
+  max-width: 25rem;
+  padding: 1rem;  
+  background-color: #F2E6C4;
+  color: #546031;
+  border-radius: 4px;
+  box-shadow: 5px 5px 15px 5px  #bbb;
+}
+.thankyou h2 {
+  padding-top: 0;
 }
