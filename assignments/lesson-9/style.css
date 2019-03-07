@@ -1,0 +1,73 @@
+/* || general styles */
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  body {
+    width: 960px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    font-family: 'Bungee Inline', cursive;
+  }
+  
+  /* header styles */
+  
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(156, 6, 6);
+  }
+  
+  header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: gold;
+    border: 1px solid black; 
+    color: black;
+  }
+  
+  /* section styles */
+  section {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  section article {
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px  rgb(29, 29, 128);
+    border: 1px solid rgb(29, 29, 128);
+ margin: 1.5rem;
+ padding: .75rem;
+   
+        width: 33%;
+    
+        
+  }
+  
+  section p {
+    margin: 5px 0;
+    
+    font-weight: bold;
+    
+    
+  }
+
+  section ul {
+    margin-top: 0;
+
+    
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    letter-spacing: -.5px;
+    margin-bottom: 10px;
+   
+    color: rgb(29, 29, 128);
+
+  }

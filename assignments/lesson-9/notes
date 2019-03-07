@@ -1,0 +1,4 @@
+I followed their pattern in order to make it able to add more or less, dynamically.
+ for (var i = 0; i < towns.length; i++) {
+    for (var s = 0; s < arrayTowns.length; s++) {
+      if (towns[i].name == arrayTowns[s]) {
