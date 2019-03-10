@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our Towns</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <section>
+
+    </section>
+
+    <script>
+    const section = document.querySelector('section');
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    const request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+        let townData = request.response;
+        let towns = townData['towns'];
+
+      
+  for (let i = 0; i < towns.length; i++) {
+    if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+    let myArticle = document.createElement('article');
+    let myH2 = document.createElement('h2');
+    let myPara1 = document.createElement('p');
+    let myPara2 = document.createElement('p');
+    let myPara3 = document.createElement('p');
+    let myPara4 = document.createElement('p');
+    
+    myH2.textContent = towns[i].name;
+    myPara1.textContent = towns[i].motto;
+    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+    myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
+    myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
+        
+    /*let superPowers = towns[i].powers;
+    for (let j = 0; j < superPowers.length; j++) {
+      let listItem = document.createElement('li');
+      listItem.textContent = superPowers[j];
+      myList.appendChild(listItem);*/
+    
+
+    myArticle.appendChild(myH2);
+    myArticle.appendChild(myPara1);
+    myArticle.appendChild(myPara2);
+    myArticle.appendChild(myPara3);
+    myArticle.appendChild(myPara4);
+
+    section.appendChild(myArticle);
+    }
+  }
+
+}    
+    </script>
+  </body>
+</html>
