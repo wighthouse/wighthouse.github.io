@@ -102,7 +102,8 @@ main {
 .summary {
 	position: absolute;
 	top: 25px;
-	left: 50px;
+  left: 50px;
+  max-width: 300px;
 	background-color: #546031;
   color: #D5AC6C;
 	opacity:.85;
