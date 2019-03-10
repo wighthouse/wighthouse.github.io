@@ -31,6 +31,7 @@ request.onload = function () {
             myImg.setAttribute('alt', 'The city of '+ towns[i].name +' picture');
             myPara2.setAttribute('class', 'label')
             myPara2span.setAttribute ('class', 'info');
+            section.setAttribute('class', 'towns');
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);

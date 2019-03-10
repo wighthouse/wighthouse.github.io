@@ -299,7 +299,7 @@ input:focus:invalid {
   padding-top: 0;
 }
  /* town data styles */
- section {
+ section .towns {
   display: grid;
   grid-template-columns: auto;
   
@@ -325,6 +325,6 @@ section p:nth-of-type(1) {
   color: #D5AC6C;
   font-style: italic;
 }
-section p span .info {
+section p span.info {
   font-weight: 100;
 }
