@@ -34,6 +34,9 @@ header {
 header h1, header h2{
     color: #ffffff;
 }
+.headings a {
+  text-decoration: none;
+}
   #logo {
     background-color: #ffffff;
     border: solid 3px #D5AC6C;
