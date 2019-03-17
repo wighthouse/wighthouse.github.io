@@ -52,17 +52,17 @@
                     <h3>Today's Weather</h3>
                     <div class="currentdetails">
                         <div class="label" >Currently: </div>
-                        <div class="value"><span id="currently" class="currently"></span> &deg;F</div>
+                        <div class="value"><span id="currently"></span></div>
                         <div class="label">High: </div>
-                        <div class="value"><span id="high">27</span> &deg;F</div>
+                        <div class="value"><span id="high"></span> &deg;F</div>
                         <div class="label">Low: </div>
-                        <div class="value"><span id="low">15 &deg;F</span></div>
+                        <div class="value"><span id="low"></span>&deg;F</div>
                         <div class="label">Wind Chill: </div>
                         <div class="value"><span id="chill"></span> &deg;F</div>
                         <div class="label">Humidity: </div>
-                        <div class="value"><span id="humidity">77 %</span></div>
+                        <div class="value"><span id="humidity"></span>%</div>
                         <div class="label">Wind Speed: </div>
-                        <div class="value"><span id="speed">3</span> mph</div>
+                        <div class="value"><span id="speed"></span> mph</div>
                     </div>
                 </section>
             </div>
@@ -71,7 +71,7 @@
                 <table>
                     <thead>
                         <tr>
-                            <th id="5day1"></th>
+                            <th><span id="5day1"></span></th>
                             <th id="5day2"></th>
                             <th id="5day3"></th>
                             <th id="5day4"></th>
@@ -80,8 +80,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td ><img id="day1" src="" alt=""
-                                height="80" class="fiveday-image"><br></td>
+                            <td><img id="day1" src="" alt=""
+                                height="80" ><br></td>
                             <td><img src="images/partly_cloudy.png" alt="partly
                                     cloudy" height="80" class="fiveday-image"><br>29
                                 &deg;F</td>
@@ -143,6 +143,6 @@
         <script src="scripts/currentdate.js"></script>
         <script src="scripts/toggle-menu.js"></script>
         <script src="scripts/windchill.js"></script>
-      <!--<script src="scripts/forecastweatherapi.js"></script>-->
+        <script src="scripts/forecastweatherapi.js"></script>
     </body>
 </html>

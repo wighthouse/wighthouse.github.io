@@ -8,13 +8,14 @@ weatherRequest.onload = function() {
     let weatherData = JSON.parse(weatherRequest.responseText);
     
 
-    document.getElementById("currently").innerHTML = weatherData.main.temp.toFixed(0);
+    document.getElementById("currently").innerHTML = weatherData.weather[0].main;
+    document.getElementById("high").innerHTML = weatherData.main.temp.toFixed(0);
+    document.getElementById("low").innerHTML = weatherData.main.temp_min.toFixed(0);
+    document.getElementById("humidity").innerHTML = weatherData.main.humidity.toFixed(0);
+    document.getElementById("speed").innerHTML = weatherData.wind.speed.toFixed(0);
 
-
+    let windchill = getWindChill();
     let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon +".png";
     let desc = weatherData.weather[0].description
-
-    document.getElementById("day1").setAttribute("src", icon);
-    document.getElementById("day1").setAttribute("alt", desc);
 
 }

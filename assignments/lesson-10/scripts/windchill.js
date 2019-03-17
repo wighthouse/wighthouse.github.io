@@ -1,6 +1,7 @@
  
 //Get the temp and wind speed from the page. Call the windChill function.
 	//Store the result in a variable, and display it on the page.
+	function getWindChill() {
 	let tempF = parseFloat(document.getElementById("high").innerHTML);
 	let speed = parseFloat(document.getElementById("speed").innerHTML);
    
@@ -11,7 +12,7 @@
 
     document.getElementById("chill").innerHTML= chill.toFixed(1);
 	
-   
+	}
 		
 		
 	  
