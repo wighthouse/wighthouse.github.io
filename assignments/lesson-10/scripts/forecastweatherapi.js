@@ -9,14 +9,14 @@ forecastRequest.onload = function() {
     console.log(fiveDayData);
  let icon = "http://openweathermap.org/img/w/" + fiveDayData.list[0].weather[0].icon + ".png";
     let desc = fiveDayData.list[0].weather[0].description
-    let today = getDay();
-    let daysofweek = new Array [Sun, Mon, Tue, Wed, Thu, Fri, Sat]
+    let today = new Date();
     
-        document.getElementById("5day1").innerHTML = daysofweek[3] ;
-        document.getElementById("5day2").innerHTML = daysofweek[(today+2)].value ;
-        
-    }
     
+        document.getElementById("5day1").innerHTML = days[today.getDay()+1];
+        document.getElementById("5day2").innerHTML =  days[today.getDay()+2];
+        document.getElementById("5day3").innerHTML =  days[today.getDay()+3];
+        document.getElementById("5day4").innerHTML =  days[today.getDay()+4];
+        document.getElementById("5day5").innerHTML =  days[today.getDay()+5];
 
     
 
@@ -27,10 +27,9 @@ forecastRequest.onload = function() {
         document.getElementById("day1").setAttribute("src", icon);
    // }
 
-    
+} 
 
    
 
    
 
-}
