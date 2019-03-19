@@ -80,13 +80,16 @@ header h1, header h2{
 }
 .navigation a:hover {
   color: #ffffff;
-  background-color: #546031;
+  background-color: #D5AC6C;
 }
 .navigation li {display: none;}
 
 .responsive li {display: block;}
 
-.navigation .current {text-decoration: underline;}
+.navigation .current {
+  color: #ffffff;
+  background-color: #546031;
+}
 
 main {
   max-width: 100%; margin: 0 auto;

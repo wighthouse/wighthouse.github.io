@@ -7,29 +7,35 @@ forecastRequest.send();
 forecastRequest.onload = function() {
     let fiveDayData = JSON.parse(forecastRequest.responseText);
     console.log(fiveDayData);
- let icon = "http://openweathermap.org/img/w/" + fiveDayData.list[0].weather[0].icon + ".png";
-    let desc = fiveDayData.list[0].weather[0].description
+    
+    
+    
     let today = new Date();
     
-    
-        document.getElementById("5day1").innerHTML = days[today.getDay()+1];
-        document.getElementById("5day2").innerHTML =  days[today.getDay()+2];
-        document.getElementById("5day3").innerHTML =  days[today.getDay()+3];
-        document.getElementById("5day4").innerHTML =  days[today.getDay()+4];
-        document.getElementById("5day5").innerHTML =  days[today.getDay()+5];
+        document.getElementById("5day1").innerHTML = days[(today.getDay()+1)%7];
+        document.getElementById("5day2").innerHTML = days[(today.getDay()+2)%7];
+        document.getElementById("5day3").innerHTML = days[(today.getDay()+3)%7];
+        document.getElementById("5day4").innerHTML = days[(today.getDay()+4)%7];
+        document.getElementById("5day5").innerHTML = days[(today.getDay()+5)%7];
 
     
+    let c = 1
+    for (i=0; i < fiveDayData.list.length; ) {
+         if (fiveDayData.list[i].dt_txt.includes("18:00:00")) {
+        
+        let desc = fiveDayData.list[i].weather[0].description;
+        let icon = "http://openweathermap.org/img/w/" + fiveDayData.list[i].weather[0].icon + ".png";
+        document.getElementById("day"+c+"Temp").innerHTML=fiveDayData.list[i].main.temp.toFixed(0)+ " &degF";
+        document.getElementById("day"+c).setAttribute("alt", desc);
+        document.getElementById("day"+c).setAttribute("src", icon);
+        c++;
+        }
+        i++;
+    }
+     
+      
 
-    //if (fiveDayData.hour.dt_txt.includes("18:00")) {
-        document.getElementById("day1").innerHTML =fiveDayData.list[0].main.temp.toFixed(0);
-    
-        document.getElementById("day1").setAttribute("alt", desc);
-        document.getElementById("day1").setAttribute("src", icon);
-   // }
+ 
 
-} 
-
-   
-
-   
+}  
 
