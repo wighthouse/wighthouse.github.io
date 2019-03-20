@@ -273,7 +273,12 @@ label.side {
   margin:0 0 2rem 2rem;
   width: 98%;
   max-width: 20rem;
-}
+  }
+  .formContainer .button:hover {
+    background-color: #D5AC6C;
+    color: #ffffff;
+    font-size: 1.25rem;
+  } 
 input:invalid {
   box-shadow: 0 0 5px 1px red;
 }
