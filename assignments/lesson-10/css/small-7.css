@@ -122,13 +122,18 @@ main {
   position: absolute;
 	top: 25px;
   right: 50px;
-  max-width: 250px;
+  max-width: 400px;
 	background-color: #546031;
   color: #D5AC6C;
 	opacity:.85;
   border: 1px solid #D5AC6C;
 	padding: 1.5rem;
 	box-shadow: 0 0 30px #fff;
+}
+.events ul {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.25rem;
 }
 .summary h3, .events h3 {
   color: #D5AC6C;
@@ -137,7 +142,7 @@ main {
   margin-top: 0px;
   margin-bottom: 10px;
 } 
-.currentdetails, .upcomingEvents {
+.currentdetails {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: .25rem;
