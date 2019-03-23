@@ -7,14 +7,11 @@
  }
 body {
     font-family: 'Open Sans', sans-serif;
-    max-width: 1280px;
+    max-width: 80%;
     margin: auto;
      
   }
-  main {
-    max-width: 80%;
-    height: auto;
-  }  
+ 
   h1,h2,h3,h4,h5,h6 {
     color: #546031;
     font-family: 'Roboto', sans-serif;
@@ -92,14 +89,17 @@ header h1, header h2{
 }
 
 main {
-  max-width: 100%; margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
+  height: auto;
+}  
   
-}
+
 .page-name {
   text-align: center;
   padding: 40px 0px 20px;
 }
-.hero {
+.hero .heroimg{
   display: inline-block;
   position: relative;
   max-width: 100%;
