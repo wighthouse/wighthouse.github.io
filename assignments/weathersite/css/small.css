@@ -99,12 +99,15 @@ main {
   text-align: center;
   padding: 40px 0px 20px;
 }
-.hero .heroimg{
+.hero {
+  margin-top: 1rem;
   display: inline-block;
   position: relative;
   max-width: 100%;
 }
-
+.heroimg{
+  max-width: 100%;
+}
 .summary {
   display: inline-block;
   position: absolute;
@@ -335,11 +338,13 @@ input:focus:invalid {
 }
  /* town data styles */
  section .towns {
+  
   display: grid;
   grid-template-columns: auto;
   
 }
 section article {
+  margin-top: 1rem;
   text-align: center;
   box-sizing: border-box;
   box-shadow: 0 0 50px #888;
