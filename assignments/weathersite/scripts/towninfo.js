@@ -1,6 +1,20 @@
-//Weather Summary Script
+//Assign the city name
+let city = document.title
+let cityid = 0
+let cityname = ""
+if (city.includes('Preston')){
+    cityid = '5604473';
+    cityname = "Preston";
+}else if (city.includes('Soda Springs')){
+        cityid = '5678757';
+        cityname = "Soda Springs";
+}else if(city.includes('Fish Haven')){
+    cityid = '5585000';
+    cityname = "Fish Haven";
+}
+//Weather Summary Script  
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=15f1af395f7479acc2b5498a332c81fe';
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?id='+ cityid +'&units=imperial&APPID=15f1af395f7479acc2b5498a332c81fe';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
@@ -21,13 +35,13 @@ weatherRequest.onload = function() {
 }
 //Forecast Script
 let forecastRequest = new XMLHttpRequest();
-let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=15f1af395f7479acc2b5498a332c81fe';
+let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/forecast?id='+ cityid+'&units=imperial&APPID=15f1af395f7479acc2b5498a332c81fe';
 forecastRequest.open('Get', apiURLstring2, true);
 forecastRequest.send();
 
 forecastRequest.onload = function() {
     let fiveDayData = JSON.parse(forecastRequest.responseText);
-    console.log(fiveDayData);
+    //console.log(fiveDayData);
     
     
     
@@ -68,7 +82,7 @@ request.onload = function () {
 
 
     for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston"){ //|| towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+        if (towns[i].name == cityname){ 
             
             let eventList = document.createElement('ul');
             for (let c = 0; c<towns[i].events.length; c++){
