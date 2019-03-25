@@ -10,6 +10,18 @@
     
     
 }
+.summary {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+.events {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
 
 .fiveday, table{
     display: inline-block;

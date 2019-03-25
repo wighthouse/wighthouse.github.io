@@ -109,10 +109,6 @@ main {
   max-width: 100%;
 }
 .summary {
-  display: inline-block;
-  position: absolute;
-	top: 25px;
-  left: 50px;
   max-width: 250px;
 	background-color: #546031;
   color: #D5AC6C;
@@ -122,10 +118,6 @@ main {
 	box-shadow: 0 0 30px #fff;
 }
 .events {
-  display: inline-block;
-  position: absolute;
-	top: 25px;
-  right: 50px;
   max-width: 400px;
 	background-color: #546031;
   color: #D5AC6C;
