@@ -29,7 +29,7 @@ weatherRequest.onload = function() {
     document.getElementById("speed").innerHTML = weatherData.wind.speed.toFixed(0);
 
     let windchill = getWindChill();
-    let icon = "http://openweathermap.org/img/w/" + weatherData.weather[0].icon +".png";
+    let icon = "https://openweathermap.org/img/w/" + weatherData.weather[0].icon +".png";
     let desc = weatherData.weather[0].description
 
 }
@@ -41,10 +41,6 @@ forecastRequest.send();
 
 forecastRequest.onload = function() {
     let fiveDayData = JSON.parse(forecastRequest.responseText);
-    //console.log(fiveDayData);
-    
-    
-    
     let today = new Date();
     
         document.getElementById("5day1").innerHTML = days[(today.getDay()+1)%7];
