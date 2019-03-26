@@ -55,7 +55,7 @@ forecastRequest.onload = function() {
          if (fiveDayData.list[i].dt_txt.includes("18:00:00")) {
         
         let desc = fiveDayData.list[i].weather[0].description;
-        let icon = "http://openweathermap.org/img/w/" + fiveDayData.list[i].weather[0].icon + ".png";
+        let icon = "https://openweathermap.org/img/w/" + fiveDayData.list[i].weather[0].icon + ".png";
         document.getElementById("day"+c+"Temp").innerHTML=fiveDayData.list[i].main.temp.toFixed(0)+ " &degF";
         document.getElementById("day"+c).setAttribute("alt", desc);
         document.getElementById("day"+c).setAttribute("src", icon);
