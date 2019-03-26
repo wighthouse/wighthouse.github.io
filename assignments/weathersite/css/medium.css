@@ -12,8 +12,6 @@
 }
 .navigation {
     flex-direction: row;
-    
-    
 }
 
 .fiveday, table{
@@ -26,9 +24,9 @@ td {
 
 .article {
     max-width: 100%;
-    }    
+}    
 
 .gallery {
     grid-template-columns: 1fr 1fr ;
-  }
+}
 }
