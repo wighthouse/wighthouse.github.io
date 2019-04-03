@@ -1,5 +1,108 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Roboto');
+/** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ }*/
+body {
+  margin: 0px;
+  
+}
+.wrapper {
+  display: grid;
+  grid-gap: 1.5vw;
+  grid-template-areas:
+  "header"
+  "nav" 
+  "content"
+  "sidebar"
+  "footer";
+  
+}
 
 
-font-family: 'Great Vibes', cursive;
-font-family: 'Roboto', sans-serif;
+.box {
+  
+  border-radius: 5px;
+  padding: 20px;
+  
+}
+aside {
+  grid-area: sidebar;
+  display: grid;
+  justify-items: center;
+  width: auto;
+}
+main{
+  grid-area: content;
+  display: grid;
+  grid-gap: 1.5vw;
+  background-color: #75685f; 
+  color: #fff;
+
+}
+
+.featureimg {
+  display: grid;
+  justify-items: center;
+  background-color: #75685f; 
+  color: #fff;
+}
+.article{ 
+  display: grid;
+  justify-items: center;
+  
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  background-color: #0f2640;
+  color: #fff;  
+}
+h1 {
+  justify-self: center;
+  font-family: "Great Vibes", cursive, sans-serif;
+  font-size: 4rem;
+  font-weight: lighter;
+}
+nav {
+  grid-area: nav;
+}
+  h5 {
+  font-family: 'Great Vibes', cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #fff;
+  margin: -5px;
+  z-index: 5;
+}
+  
+
+.temple1, .temple2, .temple3, .temple4{
+  background-color: #ddb594;
+  display: grid;
+  justify-items: center;
+  
+}
+footer {
+  grid-area: footer;
+}
+
+header,
+footer {
+  display: grid;
+  background-color: #0f2640;
+  color: #fff;
+  justify-items: center;
+  
+}
+
+nav {
+  background-color: #fff6d2;
+  color: #0f2640;
+  display: grid;
+  align-content: flex-end;
+}
+
+

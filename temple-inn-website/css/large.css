@@ -1,0 +1,16 @@
+@media only screen and (min-width:800px){
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 10%;
+    grid-template-rows: 1fr;
+    
+    background-color: #fff;
+    color: #444;
+  }
+  header{
+      grid-column: 1/6;
+  }
+}
