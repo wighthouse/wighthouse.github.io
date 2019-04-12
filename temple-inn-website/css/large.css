@@ -4,13 +4,54 @@
 .wrapper {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 10%;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
     grid-template-rows: 1fr;
     
     background-color: #fff;
     color: #444;
   }
   header{
-      grid-column: 1/6;
+      grid-column: 1/8;
   }
+  h1{
+    font-size: 4rem;
+  }
+  nav {
+    grid-column: 1/8;
+  }
+  .navigation li:first-child { 
+    display: none;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 auto;
+    
+    
+}
+main{
+    grid-column: 2/5;
+    display: grid;
+    grid-template-areas: "featureimg featureimg article article"
+                          "featureimg featureimg article article"
+                          "temple1 temple2 temple3 temple4";
+}
+aside {
+    grid-column: 5/6;
+  
+  }  
+  
+  footer {
+    grid-column: 1/8;
+  }
+
+  #featurepic {
+    max-width: 600px;
+  }
+  .box img {
+    max-width: 180px;
+  }
+  
+
+  
 }

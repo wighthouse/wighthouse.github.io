@@ -11,9 +11,7 @@
     
 }
 .navigation {
-    flex-direction: row;
-    
-    
+    flex-direction: row;  
 }
 
 .fiveday, table{

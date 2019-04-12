@@ -20,28 +20,54 @@
     <body>
         <div class="wrapper">
             <header>
-                <div id="logo">
-                    <img src="images/tis-logo.png"></div>
+                <div id="logo"><a href="index.html" >
+                    <img src="images/tis-logo.png"></a></div>
                 <h1>Temple Inn & Suites</h1></header>
-            <nav> Nav menu</nav>
+            <nav>
+                    <ul class="navigation">
+                            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                            <li><a href="index.html" class="current">Home</a></li>
+                            <li><div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Locations</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                      <a href="#Bogota">Bogota</a>
+                                      <a href="#Laie">Laie</a>
+                                      <a href="#Paris">Paris</a>
+                                      <a href="#Rome">Rome</a>
+                                    </div>
+                                  </div></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="reservation.html">Reservations</a></li>
+                        </ul>
+            </nav>
             <aside class="box sidebar">
-                <h4>Amenties</h4>
+                <h4>Amenties included with every reservation:</h4>
                 <ul>
-                    <li>Complimentary Luggage Storage</li>
-                    <li>Free Changing Room</li>
-                    <li>Low Cost Childcare</li>
+                    <li>Free Hot Breakfast</li>
+                    <li>Free Temple Shuttle</li>
+                    <li>Free Parking</li>
+                    <li>Free WiFi high speed internet</li>
                     <li>Family Search Center</li>
-                    <li>Youth Group Rooms</li>
+                    <li>Indoor Pool</li>
                     <li>Fitness Center</li>
+                </ul>    
+                <h4>We also offer the following services to all temple patrons:</h4>    
+                <ul>
+                    <li>Low Cost Childcare</li>
+                    <li>Youth Group Rooms</li>
+                    <li>Free Luggage Storage</li>
+                    <li>Free Changing Room</li>
+                    <h4>Reception Facilities</h4>
+                    <h4>Extended Stay Rentals</h4>
                 </ul>
-                <h4>Reception Facilities</h4>
-                <h4>Extended Stay Rentals</h4>
+                
             </aside>
             <main>
                 <div class="box featureimg"><h5>Featured Temple</h5><img
                         src="https://content.ldschurch.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/2019/400x250/7-Rome-Temple-2160340.jpg"
                         width="300px" alt="7-Rome-Temple-2160340"
-                        class="templepic" /></div>
+                        id="featurepic" /></div>
                 <div class="box article"><h5>Rome, Italy</h5><p>Built in the land where
                         ancient Apostles Peter and Paul preached and died, the
                         temple is the Church’s first in Italy and 162nd
@@ -71,8 +97,27 @@
                         width="300px" alt="6-Rome-Temple-2160338"
                         class="templepic" /></div>
             </main>
-            <footer>Footer</footer>
+            <footer>
+                    <div class="contact">
+                            <img id="map" src="images/map.JPG" alt="Map TIS"
+                                width="240"><h4>Temple Inn & Suites</h4>
+                            <p>4800 Montgomery Ln #300<br>
+                               Bethesda, MD 20814<br><br>
+                                800.LDS.STAY<br>
+                                contact@templeinnandsuites.com
+                            </p>
+                        </div>
+                        
+                        <div class="info">
+                            <p>&copy; 2019 | Temple Inn & Suites | Resources | Maretta Wight </p>
+                            <div>
+                            <p id="date"></p>
+                            </div>
+                        </div>
+            </footer>
         </div>
-
+        <script src="scripts/toggle-menu.js"></script>
+        <script src="scripts/dropdown-menu.js"></script>
+        <script src="scripts/currentdate.js"></script>
     </body>
 </html>

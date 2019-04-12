@@ -7,6 +7,7 @@
     grid-template-rows: 6rem 1fr 3rem;
     grid-template-areas: "header header header header"
                          "nav nav nav nav"
+                         ". pagename pagename ."
                         ". content sidebar ."
                         ". content sidebar . "
                          "footer footer footer footer"; 
@@ -19,7 +20,19 @@
                             "temple1 temple1 temple2 temple2"
                             "temple3 temple3 temple4 temple4"
   }
+  .navigation li:first-child { 
+    display: none;
+}
 
+.navigation li {
+    display: block;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    
+}
+.navigation {
+    flex-direction: row;  
+}
   .featureimg {
   grid-area: featureimg;
   
@@ -47,4 +60,6 @@
   /*grid-column: 1/span 2;
   grid-row: 2/span 1;*/
 }
+
+
 }
