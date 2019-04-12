@@ -1,17 +1,17 @@
 const section = document.querySelector('section');
-const requestURL = 'https://wighthouse.github.io/temple-inn-website.json';
+const requestURL = 'https://wighthouse.github.io/temple-inn-website/temples.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 
 request.onload = function () {
-    let townData = request.response;
-    let towns = townData['towns'];
+    let templeData = request.response;
+    let temples = templeData['temples'];
 
 
-    for (let i = 0; i < towns.length; i++) {
-        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+    for (let i = 0; i < temples.length; i++) {
+        if (temples[i].city == "Bogota"){ //|| temples[i].name == "Soda Springs" || temples[i].name == "Fish Haven") {
             let myArticle = document.createElement('article');
             let myH2 = document.createElement('h2');
             let myPara1 = document.createElement('p');
@@ -21,17 +21,17 @@ request.onload = function () {
             let myPara4 = document.createElement('p');
             let myImg = document.createElement('img');
 
-            myH2.textContent = towns[i].name;
-            myPara1.textContent = towns[i].motto;
-            myPara2.textContent = 'Year Founded: ';
-            myPara2span.textContent = towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
-            myImg.setAttribute('src','images/' + towns[i].name +'.jpg');
-            myImg.setAttribute('alt', 'The city of '+ towns[i].name +' picture');
+            myH2.textContent = temples[i].templeName;
+            //myPara1.textContent = temples[i].motto;
+            myPara2.textContent = 'Year Dedicated: ';
+            myPara2span.textContent = temples[i].yearDedicated;
+            myPara3.textContent = 'Address: ' + temples[i].address +"\n" + temples[i].cityadd + "\n" +temples[i].country;
+            myPara4.textContent = 'Telephone: \n' + temples[i].telephone ;
+            myImg.setAttribute('src','images/' + temples[i].city +'.jpg');
+            myImg.setAttribute('alt', 'The '+ temples[i].city +' Temple picture');
             myPara2.setAttribute('class', 'label')
             myPara2span.setAttribute ('class', 'info');
-            section.setAttribute('class', 'towns');
+            section.setAttribute('class', 'temples');
 
             myArticle.appendChild(myH2);
             myArticle.appendChild(myPara1);

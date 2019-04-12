@@ -48,6 +48,7 @@ main{
 
 }
 
+
 .featureimg {
   display: grid;
   justify-items: center;
@@ -313,5 +314,14 @@ input:focus:invalid {
 }
 .thankyou h2 {
   padding-top: 0;
+}
+main.bogota section.temples{
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1/2;
+  grid-gap: 1.5vw;
+  background-color: #ddb594; 
+  color: #fff;
+
 }
 

@@ -2,7 +2,7 @@
     "temples" : [
     {
       "city": "Bogota",
-      "templeName": "Bogota, Colombia",
+      "templeName": "Bogota Colombia Temple",
       "yearDedicated": 1999,
       "address": "Carrera 46 N 127-45",
       "cityadd": "Bogotoa Distrito Capital",
@@ -22,7 +22,7 @@
     },
     {
         "city": "Laie",
-        "templeName": "Laie, Hawaii",
+        "templeName": "Laie Hawaii Temple",
         "yearDedicated": 1919,
         "address": "55-600 Naniloa Loop",
         "cityadd": "Laie HI 96762-2202",
