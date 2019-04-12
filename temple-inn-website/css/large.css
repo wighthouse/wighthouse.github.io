@@ -36,8 +36,8 @@ main{
                           "featureimg featureimg article article"
                           "temple1 temple2 temple3 temple4";
 }
-aside {
-    grid-column: 5/6;
+aside.bogota {
+    grid-column: 1/6;
   
   }  
   
@@ -52,7 +52,7 @@ aside {
     max-width: 180px;
   }
   main.bogota{
-    grid-column: auto;
+    grid-template-columns: 10% 1fr 10%;
     display: grid;
    justify-content: center;
   } 

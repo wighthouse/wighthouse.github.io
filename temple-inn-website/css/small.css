@@ -323,5 +323,57 @@ main.bogota section.temples{
   background-color: #ddb594; 
   color: #fff;
 
+}/*
+.summary h3, .events h3 {
+  color: #D5AC6C;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+} 
+.currentdetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: .25rem;
+}
+.currentdetails .label{
+  text-align: right;
+}
+.currentdetails .value {
+  color: #ffffff;
+  margin-left: 5px;
+}
+.summary {
+  display: inline-block;
+  grid-area: content;
+  grid-template-rows: 1/5;
+  z-index: 5;
+	top: 25px;
+  left: 50px;
+  max-width: 250px;
+	background-color: #546031;
+  color: #D5AC6C;
+	opacity:.85;
+  border: 1px solid #D5AC6C;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #fff;
+}
+.services {
+  display: inline-block;
+  
+	top: 25px;
+  right: 50px;
+  max-width: 400px;
+	background-color: #546031;
+  color: #D5AC6C;
+	opacity:.85;
+  border: 1px solid #D5AC6C;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #fff;
+}
+.services ul {
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.25rem;
 }
 
