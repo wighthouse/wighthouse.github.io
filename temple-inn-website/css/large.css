@@ -5,7 +5,9 @@
     display: grid;
    
     grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
+    grid-template-rows: repeat(11,1fr);
     
+                            ;
     
     background-color: #fff;
     color: #444;
@@ -31,6 +33,7 @@
     
     
 }
+       
 main{
     grid-column: 2/10;
     grid-row: 3/9;
