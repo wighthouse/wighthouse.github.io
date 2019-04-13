@@ -35,13 +35,13 @@ weatherRequest.onload = function() {
 //Temple Events
 const div = document.querySelector('div.services');
 const request2URL = 'https://wighthouse.github.io/temple-inn-website/temples.json';
-const request = new XMLHttpRequest();
-request.open('GET', request2URL);
-request.responseType = 'json';
-request.send();
+const request2 = new XMLHttpRequest();
+request2.open('GET', request2URL);
+request2.responseType = 'json';
+request2.send();
 
-request.onload = function () {
-    let templeEvents = request.response;
+request2.onload = function () {
+    let templeEvents = request2.response;
     let temples = templeEvents['temples'];
 
 
