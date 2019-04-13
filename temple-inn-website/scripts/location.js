@@ -11,7 +11,7 @@ request.onload = function () {
 
 
     for (let i = 0; i < temples.length; i++) {
-        if (temples[i].city == "Bogota"){ //|| temples[i].name == "Soda Springs" || temples[i].name == "Fish Haven") {
+        if (temples[i].city == "Bogota"|| temples[i].name == "Rome" || temples[i].name == "Laie" | temples[i].name == "Paris") {
             let myArticle = document.createElement('article');
             let myH2 = document.createElement('h2');
             let myPara1 = document.createElement('p');
@@ -20,6 +20,7 @@ request.onload = function () {
             let myPara3 = document.createElement('p');
             let myPara4 = document.createElement('p');
             let myImg = document.createElement('img');
+            let picname = temples[i}].city.toString().toLowerCase();
 
             myH2.textContent = temples[i].templeName;
             //myPara1.textContent = temples[i].motto;
@@ -28,7 +29,7 @@ request.onload = function () {
             myPara3.textContent = 'Address: ' + temples[i].address +"\n" + temples[i].cityadd + "\n" +temples[i].country;
             myPara4.textContent = 'Telephone: \n' + temples[i].telephone ;
             myImg.setAttribute('src','images/' + temples[i].city +'.jpg');
-            myImg.setAttribute('alt', 'The '+ temples[i].city +' Temple picture');
+            myImg.setAttribute('alt', 'The '+ picname +' Temple picture');
             myPara2.setAttribute('class', 'label')
             myPara2span.setAttribute ('class', 'info');
             section.setAttribute('class', 'temples');
