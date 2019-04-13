@@ -3,7 +3,7 @@
 
 .wrapper {
     display: grid;
-    grid-gap: .1vw;
+   
     grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
     
     
