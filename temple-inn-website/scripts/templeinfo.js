@@ -34,7 +34,7 @@ weatherRequest.onload = function() {
 
 //Temple Events
 const div = document.querySelector('div.services');
-const requestURL = 'https://byui-cit230.github.io/weather/data/temples.json';
+const requestURL = 'https://wighthouse.github.io/temple-inn-website/temples.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
