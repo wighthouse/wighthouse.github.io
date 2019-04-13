@@ -40,6 +40,9 @@
 .article{
   grid-area: article;  
 }
+    aside{
+    grid-area: sidebar;
+    }   
 .temple1{
     grid-area: temple1;
   /*grid-column: 1/span 2;
