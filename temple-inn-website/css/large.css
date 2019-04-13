@@ -1,23 +1,23 @@
-@media only screen and (min-width:800px){
+@media only screen and (min-width:736px){
 
 
 .wrapper {
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 10% 1fr 1fr 1fr 1fr 10%;
+    grid-gap: 1vw;
+    grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
     grid-template-rows: 1fr;
     
     background-color: #fff;
     color: #444;
   }
   header{
-      grid-column: 1/8;
+      grid-column: 1/11;
   }
   h1{
     font-size: 4rem;
   }
   nav {
-    grid-column: 1/8;
+    grid-column: 1/11;
   }
   .navigation li:first-child { 
     display: none;
@@ -30,11 +30,15 @@
     
 }
 main{
-    grid-column: 2/5;
+    grid-column: 2/10;
+    grid-row: 3/9;
     display: grid;
-    grid-template-areas: "featureimg featureimg article article"
-                          "featureimg featureimg article article"
-                          "temple1 temple2 temple3 temple4";
+    grid-template-areas: "featureimg featureimg featureimg article article article sidebar sidebar"
+                          "featureimg featureimg featureimg article article article sidebar sidebar"
+                          "featureimg featureimg featureimg article article article sidebar sidebar"
+                          ". . . . . . sidebar sidebar"
+                          "temple1 temple1 temple2 temple2 temple3 temple3 temple4 temple4"
+                          "temple1 temple1 temple2 temple2 temple3 temple3 temple4 temple4";
 }
 aside.bogota {
     grid-column: 1/6;
@@ -42,7 +46,7 @@ aside.bogota {
   }  
   
   footer {
-    grid-column: 1/8;
+    grid-column: 1/11;
   }
 
   #featurepic {
