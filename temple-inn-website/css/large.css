@@ -17,6 +17,7 @@
     font-size: 4rem;
   }
   nav {
+    grid-row: 9/11;  
     grid-column: 1/11;
   }
   .navigation li:first-child { 
