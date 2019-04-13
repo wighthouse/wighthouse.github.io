@@ -8,17 +8,17 @@
     grid-template-areas: "header header header header"
                          "nav nav nav nav"
                       
-                        ". content sidebar ."
-                        ". content sidebar . "
+                        ". content content ."
+                        ". content content . "
                          "footer footer footer footer"; 
     background-color: #fff;
     color: #444;
   }
 
   main{
-      grid-template-areas: "featureimg featureimg article article"
-                            "temple1 temple1 temple2 temple2"
-                            "temple3 temple3 temple4 temple4"
+      grid-template-areas: "featureimg featureimg article article sidebar"
+                            "temple1 temple1 temple2 temple2 sidebar"
+                            "temple3 temple3 temple4 temple4 sidebar";
   }
   .navigation li:first-child { 
     display: none;
