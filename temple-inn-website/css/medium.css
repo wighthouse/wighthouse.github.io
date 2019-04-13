@@ -16,9 +16,9 @@
   }
 
   main{
-      grid-template-areas: "featureimg featureimg article article sidebar"
-                            "temple1 temple1 temple2 temple2 sidebar"
-                            "temple3 temple3 temple4 temple4 sidebar";
+      grid-template-areas: "featureimg featureimg article article sidebar sidebar"
+                            "temple1 temple1 temple2 temple2 sidebar sidebar"
+                            "temple3 temple3 temple4 temple4 sidebar sidebar";
   }
   .navigation li:first-child { 
     display: none;
