@@ -3,9 +3,9 @@
 
 .wrapper {
     display: grid;
-    grid-gap: 1vw;
+    grid-gap: .1vw;
     grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10%;
-    grid-template-rows: repeat(11,1fr);
+    
     
     background-color: #fff;
     color: #444;
